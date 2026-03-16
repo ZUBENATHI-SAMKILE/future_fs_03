@@ -1,0 +1,196 @@
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Folium Café · Parkview, Johannesburg</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">F<span>o</span>lium</a>
+
+    <ul class="nav-links">
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#visit">Visit Us</a></li>
+      <li><a href="#visit" class="nav-cta">Reserve a Table</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Craft Coffee · Garden Kitchen · Parkview</p>
+
+      <h1 class="hero-title">
+        Where slow<br />mornings <em>begin.</em>
+      </h1>
+
+      <p class="hero-subtitle">
+        A neighbourhood café serving seasonally-sourced plates
+        and specialty coffee since 2019.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="#visit" class="btn-ghost">Find Us</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="stat-number">07:00</span>
+        <span class="stat-label">Opens Daily</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">4.9</span>
+        <span class="stat-label">Google Rating</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">12+</span>
+        <span class="stat-label">Seasonal Dishes</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Local Sourcing</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+
+    <div class="about-text reveal">
+      <p class="eyebrow eyebrow--light">Our Story</p>
+
+      <h2 class="section-title">
+        Food grown close,<br /><em>served with care.</em>
+      </h2>
+
+      <p class="about-body">
+        Folium started as a small stall at the Parkview Farmers Market.
+        After two years of weekend pop-ups, we opened our doors — a calm
+        space built around light, wood, and honest cooking.
+      </p>
+
+      <ul class="values-list">
+        <li>
+          <span class="value-title">Seasonal menus</span>
+          — changed monthly based on what's fresh and local.
+        </li>
+        <li>
+          <span class="value-title">Single-origin beans</span>
+          — roasted weekly in small batches by Heartland Roasters.
+        </li>
+        <li>
+          <span class="value-title">No rush</span>
+          — we encourage lingering. Come for an hour, stay for three.
+        </li>
+      </ul>
+    </div>
+    <div class="about-visual reveal">
+      <div class="about-illustration">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="leaf-svg">
+          <path d="M100 40 C100 40 60 70 60 100 C60 123 78 140 100 140 C122 140 140 123 140 100 C140 70 100 40 100 40Z"
+            fill="rgba(138,154,123,0.2)" stroke="rgba(184,154,122,0.5)" stroke-width="1"/>
+          <path d="M100 50 C100 50 85 80 90 105 C93 120 96 130 100 140"
+            stroke="rgba(184,154,122,0.5)" stroke-width="1" fill="none"/>
+          <path d="M95 85 C80 78 70 85 75 98" stroke="rgba(184,154,122,0.35)" stroke-width="0.8" fill="none"/>
+          <path d="M105 95 C120 88 128 95 122 108" stroke="rgba(184,154,122,0.35)" stroke-width="0.8" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="about-metrics">
+        <div class="metric">
+          <span class="metric-number">5+</span>
+          <span class="metric-label">Years Open</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-number">40+</span>
+          <span class="metric-label">Farm Partners</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-number">12K</span>
+          <span class="metric-label">Happy Guests</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="menu">
+
+    <div class="section-header reveal">
+      <span class="eyebrow">What We Serve</span>
+      <h2 class="section-title section-title--dark">
+        Simple ingredients,<br /><em>memorable plates.</em>
+      </h2>
+    </div>
+    <div class="menu-tabs" role="tablist">
+      <button class="menu-tab active" data-category="breakfast" role="tab">Breakfast</button>
+      <button class="menu-tab" data-category="lunch" role="tab">Lunch</button>
+      <button class="menu-tab" data-category="drinks" role="tab">Drinks</button>
+    </div>
+
+    <div id="menu-grid" class="menu-grid" aria-live="polite"></div>
+
+  </section>
+  <section id="visit">
+
+    <div class="visit-info reveal">
+      <p class="eyebrow">Come See Us</p>
+
+      <h2 class="section-title section-title--dark">
+        We'd love to<br /><em>have you in.</em>
+      </h2>
+
+      <dl class="contact-list">
+        <div class="contact-row">
+          <dt>Address</dt>
+          <dd>14 Birch Lane, Parkview<br />Johannesburg, 2193</dd>
+        </div>
+        <div class="contact-row">
+          <dt>Hours</dt>
+          <dd>Mon – Fri: 07:00 – 17:00<br />Sat – Sun: 07:30 – 15:00</dd>
+        </div>
+        <div class="contact-row">
+          <dt>Phone</dt>
+          <dd>+27 11 482 5500</dd>
+        </div>
+        <div class="contact-row">
+          <dt>Email</dt>
+          <dd>hello@foliumcafe.co.za</dd>
+        </div>
+      </dl>
+
+      <a href="#" class="btn-primary btn-primary--spaced">Make a Reservation</a>
+    </div>
+
+    <div class="map-area reveal">
+      <div class="map-grid-lines"></div>
+      <div class="map-pin"></div>
+      <p class="map-name">Folium Café</p>
+      <p class="map-address">14 Birch Lane, Parkview</p>
+    </div>
+
+  </section>
+
+  <footer id="footer">
+    <span class="footer-logo">F<span>o</span>lium</span>
+    <p class="footer-copy">© 2024 Folium Café · Parkview, Johannesburg</p>
+    <nav class="footer-links">
+      <a href="#about">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
